@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/co"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResturantManager.MealTypeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+      <android.support.constraint.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scrollbars="none"
+          android:layout_marginTop="40dp"
+          android:layout_gravity="right"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="30dp"
+              android:id="@+id/mm"
+              android:orientation="vertical">
+
+              <CheckBox
+                  android:id="@+id/delete_checkbox"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/delete_checkbox"
+                  android:textColor="@color/black"
+                  android:layout_gravity="right"
+                  android:gravity="right"
+                  android:layoutDirection="rtl"
+                  android:textDirection="rtl"
+                  android:background="@android:color/transparent"
+                  android:fontFamily="@font/italics"
+                  android:padding="8dp"
+                  android:textSize="25dp"
+                  android:layout_marginBottom="20dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:scrollbars="none"/>
+
+
+              <CheckBox
+                  android:id="@+id/add_checkbox"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/transparent"
+                  android:padding="8dp"
+                  android:textSize="25dp"
+                  android:text="@string/add_checkbox"
+                  android:textColor="@color/black"
+                  android:layout_gravity="right"
+                  android:gravity="right"
+                  android:layoutDirection="rtl"
+                  android:textDirection="rtl"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/delete_checkbox"
+                  android:scrollbars="none"/>
+
+          </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    app:layout_constraintTop_toBottomOf="@id/mm"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ii"
+        android:text="أختيار نوع الطعام المراد حذفه :"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:scrollbars="none"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_meal_type_spinner"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:gravity="right"
+        android:layout_below="@id/ii"
+        android:textDirection="rtl"
+        >
+
+    </Spinner>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_meal_type_floating_action_button"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_delete_black_24dp"
+        app:layout_anchor="@id/edit_res_cooker_edit_text"
+        app:layout_anchorGravity="bottom|end"
+    android:layout_below="@+id/edit_meal_type_spinner"
+        tools:ignore="MissingConstraints"
+        android:scrollbars="none"/>
+</RelativeLayout>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              app:layout_constraintTop_toBottomOf="@id/mm">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/mealtypetv"
+                  android:text="ادخل النوع الجديد:"
+                  android:textColor="@color/black"
+                  android:textSize="25sp"
+                  android:scrollbars="none"
+                  />
+              <EditText
+                  android:id="@+id/meal_type_edittxt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:textColorHint="#ffffff"
+                  android:layout_below="@+id/mealtypetv"
+                  android:layout_marginTop="20dp"
+                  android:scrollbars="none"/>
+
+              <android.support.design.widget.FloatingActionButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/add_meal_type_floating_action_button"
+                  android:backgroundTint="@color/colorPrimary"
+                  app:fabSize="normal"
+                  android:layout_marginTop="10dp"
+                  app:srcCompat="@drawable/ic_add_black_24dp"
+                  app:layout_anchor="@id/edit_res_cooker_edit_text"
+                  app:layout_anchorGravity="bottom|end"
+                  android:layout_below="@id/meal_type_edittxt"
+                  tools:ignore="MissingConstraints"
+                  android:scrollbars="none"/>
+
+
+          </RelativeLayout>
+
+
+      </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

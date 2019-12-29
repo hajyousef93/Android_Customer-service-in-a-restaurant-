@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/piiiza"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResturantManager.MenuFragment"
+    android:scrollbars="horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scrollbars="horizontal">
+        <EditText
+            android:id="@+id/foodnameet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_serving_dish"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:fontFamily="@font/italics"
+            android:hint="أدخل اسم الوجبة الجديدة"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+        <EditText
+            android:id="@+id/foodpriceet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_wallet"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:fontFamily="@font/italics"
+            android:hint="أدخل  سعر الوجبة الجديدة"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/foodnameet"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lll"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/foodpriceet"
+            android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/offercheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/italics"
+            android:padding="8dp"
+            android:textSize="25dp"
+            android:text="هل يوجد عرض على هذه الوجبة؟"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scrollbars="none"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/foodpriceafterofferet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_wallet"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:fontFamily="@font/italics"
+            android:hint="أدخل سعر الوجبة بعد الحسم"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/lll"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mealtypenametv"
+            android:text="حدد صنف الوجبة:"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:layout_below="@id/foodpriceafterofferet"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mealtypespinner"
+            android:layout_below="@id/mealtypenametv"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            ></Spinner>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/menu_floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            android:layout_below="@+id/mealtypespinner"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+
+    </RelativeLayout>
+</FrameLayout>

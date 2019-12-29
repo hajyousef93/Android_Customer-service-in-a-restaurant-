@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rrr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResturantManager.EditFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.15"
+            android:background="@color/white_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:scrollbars="none">
+
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <TextView
+                android:id="@+id/resname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:text="اسم المطعم"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_res_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/resname" />
+
+            <TextView
+                android:id="@+id/resaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="عنوان المطعم"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/edit_res_name_edit_text" />
+
+            <EditText
+                android:id="@+id/edit_res_address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/resaddress" />
+
+            <TextView
+                android:id="@+id/resmanager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="اسم المدير"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_res_address_edit_text" />
+
+            <EditText
+                android:id="@+id/edit_res_manager_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/resmanager" />
+
+            <TextView
+                android:id="@+id/rescooker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="اسم مدير المطبخ"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_res_manager_edit_text" />
+
+            <EditText
+                android:id="@+id/edit_res_cooker_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/rescooker" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/edit_res_cooker_edit_text"
+                >
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/edit_resturant_info_floating_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:scrollbars="none"
+                    app:fabSize="normal"
+                    app:layout_anchorGravity="bottom|end"
+                    app:srcCompat="@drawable/ic_add_black_24dp" />
+            </RelativeLayout>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

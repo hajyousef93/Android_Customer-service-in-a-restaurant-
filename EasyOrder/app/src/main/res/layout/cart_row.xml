@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/deleteItem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/cart_item_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginRight="2dp"
+                app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+            <TextView
+                android:id="@+id/cart_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/id_thumbnail"
+                android:ellipsize="end"
+                android:fontFamily="@font/italics"
+                android:gravity="center_vertical|start"
+                android:maxLines="1"
+                android:text="Food 01"
+                android:textAllCaps="true"
+                android:textColor="@color/itemname"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cart_item_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart_item_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/id_thumbnail"
+                android:gravity="center_vertical|start"
+                android:text="100,1000"
+                android:textAllCaps="true"
+                android:textColor="@color/itemname"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/cart_item_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginRight="49dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</android.support.v7.widget.CardView>

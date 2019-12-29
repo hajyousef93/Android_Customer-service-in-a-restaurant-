@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".owner.Create_Restaurant"
+android:background="@drawable/cc"
+android:paddingLeft="18dp"
+android:paddingRight="18dp"
+android:paddingTop="18dp"
+android:paddingBottom="18dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="248dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+            <EditText
+                android:id="@+id/resturant_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_shop"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="right"
+                android:fontFamily="@font/italics"
+                android:hint=" اسم المطعم الجديد"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/Resturant_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="right"
+                android:fontFamily="@font/italics"
+                android:hint=" عنوان المطعم الجديد"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+
+            <Button
+                android:id="@+id/CreateRestaurant_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/loginn"
+                android:clickable="true"
+                android:fontFamily="@font/italics"
+                android:padding="16dp"
+                android:text="إنشاء المطعم"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
